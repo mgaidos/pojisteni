@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Seznam pojištěnců</title>
+</head>
+
+<body>
+    <header class="flex-container">
+        <div id="title">
+            <h1>Pojištění</h1>
+        </div>
+    </header>
+
+    <article>
+        <div id="personal-data">
+            <h2>Zvolte typ pojištění</h2>
+            <span id="insurance-error"></span>
+            
+
+            <select name="insurance" id="select-insurance">
+                <option value="choose-option">---Zvolte jednu z možností---</option>
+                <option value="property-insurance" id="property-insurance">Pojištění majetku</option>
+                <option value="travel-insurance" id="travel-insurance">Cestovní pojištění</option>
+                
+            </select>
+   
+            <div>
+                <button type="submit" id="submit-insured-button">Uložit</button>
+                <button type="submit" id="back-button">Zpět</button>
+            </div>
+    
+        </div>
+        
+    </article>
+    <script src="/Pojistovna.js"></script>
+    <script src="/Pojistenec.js"></script>
+    <script src="/Pojisteni.js"></script>
+    <script src="/PojisteniMajetku.js"></script>
+    <script src="/CestovnPojisteni.js"></script>
+    <script src="/service.js"></script>
+
+</body>
+
+</html>

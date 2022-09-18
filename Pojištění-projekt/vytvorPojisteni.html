@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Vytvoř pojištění</title>
+</head>
+
+<body>
+    <header class="flex-container">
+        <div id="title">
+            <h1>Pojištění</h1>
+        </div>
+
+        <nav id="nav">
+            <ul class="flex-menu-container">
+                <li><a href="/index.html">Domů</a></li>
+                <li><a href="/vytvorPojisteni.html" class="active">Vytvoř pojištění</a></li>
+                <li><a href="/seznamPojistencu.html">Seznam pojištěnců</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <article>
+        <div id="personal-data">
+            <h2>Nový pojištěnec</h2>
+            <p>Jméno</p>
+            <span id="name-error"></span>
+            <input type="text"  name= "first-name" placeholder="Jan" id="first-name" class="input">
+            <p>Příjmení</p>
+            <span id="second-name-error"></span>
+            <input type="text" name= "second-name" placeholder="Novák" id="second-name" class="input">
+            <p>Email</p>
+            <span id="email-error"></span>
+            <input type="text" name= "email" placeholder="jan.novak@email.cz" id="email" class="input">
+            <p>Telefon</p>
+            <span id="phone-error"></span>
+            <input type="text" name="phone" placeholder="777666555" id="phone-number" class="input">
+            <p>Ulice a číslo popisné</p>
+            <span id="street-house-number-error"></span>
+            <input type="text" name="street" placeholder="Ulice 1" id="street-house-number" class="input">
+            <p>Město</p>
+            <span id="city-error"></span>
+            <input type="text" name= "city" placeholder="Praha 1" id="city" class="input">
+            <p>PSČ</p>
+            <span id="postal-code-error"></span>
+            <input type="text" name="postal-code" placeholder="10000" id="postal-code" class="input">
+
+            <button type="submit" id="continue-button">Pokračovat</button>
+        </div>
+    </article>
+
+
+
+
+
+
+</body>
+
+<script src="/Pojistovna.js"></script>
+<script src="/Pojistenec.js"></script>
+<script src="/Pojisteni.js"></script>
+<script src="/PojisteniMajetku.js"></script>
+<script src="/CestovnPojisteni.js"></script>
+<script src="/service.js"></script>
+
+</html>

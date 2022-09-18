@@ -1,0 +1,357 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+}
+
+html {
+    font-size: 1.2rem;
+}
+
+.flex-container {
+    display: flex;
+    background: black;
+}
+
+.flex-menu-container {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    width: 70vw;
+    margin-left: 25px;
+    margin-right: 50px;
+    background: black;
+}
+
+#title {
+    display: flex;
+    align-items: center;
+}
+
+#title>h1 {
+    margin-left: 8px;
+    font-family: "Century Gothic", CenturyGothic, Geneva, AppleGothic, sans-serif;
+    font-weight: lighter;
+    color: white;
+    margin-right: 25px;
+}
+
+nav ul li,
+a {
+    list-style-type: none;
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: 0px 5px 0px 5px;
+    min-width: 90px;
+}
+
+.active,
+li>a:hover {
+
+    /*text-decoration: underline;*/
+    text-decoration-color: greenyellow;
+    color: greenyellow;
+}
+
+#welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 80vh;
+    font-size: 2.5rem;
+}
+
+
+/* Create insurance - vytvorPojisteni */
+
+#personal-data, #list-of-insured {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0px 0px 0px;
+}
+
+#personal-data > input{
+    height: 35px;
+    width: 350px;
+    /*border: 0.5px solid rgb(175, 175, 175);*/
+    border: thin solid gray ;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+}
+
+/* Table of insured - seznamPojistencu.html */
+
+#description-of-insured{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+
+.thead-of-description{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tr-of-description > th, .tr-of-description > td{
+    width: 300px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+table{
+    border: 0px
+}
+
+.table-buttons{
+    width: 80px;
+    height: 35px;
+    border: 0px;
+    border-radius: 5px;
+    margin: 15px 0 0 0 ;
+    color: white;
+    background-color: black;
+    margin-left: 15px;
+}
+
+.table-buttons:hover{
+    background-color: greenyellow;
+    color: black;
+}
+
+/*Edit insurace */
+
+#div-for-edit-button > div{
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+ #edit-insurance,
+ #add-insurance
+ {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 15px 0px 0px 0px;
+    order: 3;
+}
+
+#edit-insured{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    margin: 15px 0px 0px 0px;
+    order: 1;
+}
+
+#confirm-button-div{
+    display: flex;
+    align-items: flex-end;
+    order: 2;
+}
+
+#div-for-edit-button{
+    border-bottom: 2px solid black;
+    margin-bottom: 50px;
+    background-color: rgb(244, 248, 248);
+}
+
+#add-insurance{
+    border-top: 2px solid black;
+}
+
+
+
+#edit-insurance > input,
+#add-insurance > input,
+#edit-insured > input{
+    height: 35px;
+    width: 350px;
+    /*border: 0.5px solid rgb(175, 175, 175);*/
+    border: thin solid gray ;
+    border-radius: 5px;
+    padding-left: 10px;
+    
+}
+
+#editing{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+.edit-table{
+    display: flex;
+    flex-direction: column;
+}
+
+    
+    
+
+.edit-table > thead > tr > th,
+.edit-table > tbody > tr > td{
+   width: 175px;
+   text-align: center;
+}
+
+#div-for-edit-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+
+.edit-insurance {
+    display: flex;
+    flex-direction: column
+
+    
+}
+
+/*Detail of the insured */
+.detail-of-insured,
+.detail-of-insured > th,
+.detail-of-insured > td{
+    border: 0.5px solid rgb(196, 196, 196);
+}
+
+#div-with-detail-table{
+    
+    display: flex;
+    flex-direction:column;
+    text-align: center;
+    background-color: rgb(244, 248, 248);
+}
+
+/*Invalid input - createInsured - end */
+
+#personal-data > h2, #list-of-insured > h2 {
+    margin: 0 0 20px 0;
+}
+#continue-button,
+#submit-insured-button,
+#back-button,
+#confirm-button,
+#add-insurance-button,
+#edit-button-in-edit,
+.delete-travel-button,
+.delete-property-button,
+.add-insurance-button,
+.edit-travel-button,
+.submit-edit-button{
+    width: 80px;
+    height: 35px;
+    border: 0px;
+    border-radius: 5px;
+    margin: 15px 0 15px 0 ;
+    color: white;
+    background-color: black;
+}
+
+#confirm-button{
+    margin-bottom: 0px;
+}
+
+#continue-button:hover,
+#submit-insured-button:hover,
+#back-button:hover,
+#confirm-button:hover,
+#add-insurance-button:hover,
+#edit-button-in-edit:hover,
+.delete-travel-button:hover,
+.delete-property-button:hover,
+.add-insurance-button:hover,
+.edit-travel-button:hover,
+.submit-edit-button:hover {
+    background-color: greenyellow;
+    color: black;
+}
+
+
+/* Create insurance - vytvorPojisteni - END */
+
+@media only screen and (max-width: 800px) {
+
+    .flex-container,
+    .flex-menu-container,
+    #icon,
+    #title,
+    nav ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-container{
+        width: 100vw;
+    }
+
+    a {
+        font-size: x-large;
+        margin-bottom: 8px;
+    }
+
+    #title>h1,
+    #nav {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #title>h1 {
+        border-bottom: 1px solid white;
+    }
+
+    .flex-container {
+        min-width: 350px;
+    }
+
+    #welcome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 80vh;
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 890px) {
+    #welcome {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 80vh;
+        font-size: 1rem;
+    }
+}
+
+

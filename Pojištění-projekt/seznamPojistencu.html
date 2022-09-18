@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Seznam pojištěnců</title>
+</head>
+
+<body>
+    <header class="flex-container">
+        <div id="title">
+            <h1>Pojištění</h1>
+        </div>
+
+        <nav id="nav">
+            <ul class="flex-menu-container">
+                <li><a href="/index.html">Domů</a></li>
+                <li><a href="/vytvorPojisteni.html">Vytvoř pojištění</a></li>
+                <li><a href="/seznamPojistencu.html" class="active">Seznam pojištěnců</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div id="list-of-insured">
+        <h2>Pojištěnci</h2>
+
+    </div>
+
+
+    <table id="description-of-insured">
+        <thead class="thead-of-description">
+            <tr class="tr-of-description">
+                <th>Jméno</th>
+                <th>Bydliště</th>
+                <th>ID Pojištěného</th>
+                <th></th>
+            </tr>
+        </thead>
+    </table>
+
+<script src="/Pojistovna.js"></script>
+    <script src="/Pojistenec.js"></script>
+    <script src="/Pojisteni.js"></script>
+    <script src="/PojisteniMajetku.js"></script>
+    <script src="/CestovnPojisteni.js"></script>
+    <script src="/service.js"></script>
+
+</body>
+
+
+
+
+</html>
